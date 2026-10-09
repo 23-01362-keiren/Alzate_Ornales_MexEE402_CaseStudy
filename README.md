@@ -43,7 +43,13 @@ Batangas State University, Alangilan Campus
 
 ## Errors we found
 
-One mistake we found is on the original Ch1_2_3 notebook, the code goes straight to df = pd.read_csv('/content/vgsales.csv') without any step that gets the file into Colab, so it fails with a FileNotFoundError unless the file was already uploaded by hand. The notebook only says to assume you uploaded it. We fixed it by adding from google.colab import files and files.upload() right before the read line, so the notebook asks for vgsales.csv first and then loads it from /content/.
+| Chapter | Error Description | Original Code | Corrected Code | Explanation |
+|---|---|---|---|---|
+| 6: Outliers | Z-score failed to detect `100`. | `np.abs(z_scores) > 3` | `np.abs(z_scores) > 2` | A threshold of 2 detects `100`, whose Z-score is about 2.62. |
+| 7: Feature Selection | `RFECV` produced an undefined R² warning. | `RFECV(estimator, step=1, cv=5)` | `RFECV(estimator, step=1, cv=3)` | Fewer folds may help with small datasets, but the warning may persist. |
+| 9: Discretization | Original Age values were overwritten. | `data['Age'] = pd.cut(data['Age'], bins=bins, labels=labels)` | `age_before = data['Age'].copy()` | Preserve the original values before discretization for comparison. |
+| 9: Discretization | Wrong column and label used for the pre-discretization plot. | `plt.hist(titanic_preprocessed[:,2], alpha=0.5, label='After discretization')` | `plt.hist(titanic_preprocessed[:,0], alpha=0.5, label='Before discretization')` | Column 0 represents the transformed Age feature before discretization, assuming Age is the first numerical feature. |
+
 
 ## Note on AI tools
 
