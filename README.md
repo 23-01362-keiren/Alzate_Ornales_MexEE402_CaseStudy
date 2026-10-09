@@ -21,9 +21,9 @@ Batangas State University, Alangilan Campus
 | Ch4 | [link](https://colab.research.google.com/drive/1Sr-ljDMZwB59uQCDqPJLVgzUJYiQDxPR?usp=sharing) | |
 | Ch5 | [link](https://colab.research.google.com/drive/16S3w4XIEJs-u6ErJMp6Dfrsb-oYrwgnr?usp=sharing) | |
 | Ch6 | [link](https://colab.research.google.com/drive/11NRetqfN2xYlq9BAfDRvD5o1S1p4i8Kc?usp=sharing) | |
-| Ch7 | | [link]() |
-| Ch8 | | [link]() |
-| Ch9 | | [link]() |
+| Ch7 | | [link](https://colab.research.google.com/drive/14Qxj4-2XJgMjaiTTzx7VBU_gEBWhU4U8?usp=sharing) |
+| Ch8 | | [link](https://colab.research.google.com/drive/1Tmn1idnmReD9JQyp1MLM38hqXb7sQAsW?usp=sharing) |
+| Ch9 | | [link](https://colab.research.google.com/drive/1tM5n-nGxbiD-kb2SL2OsRaYG2UjnIDPH?usp=sharing) |
 
 ## What we learned
 
@@ -35,11 +35,11 @@ Batangas State University, Alangilan Campus
 
 **Ch6:** We learned that outliers are values sitting far from the rest of the data, and that the Z-score method and the IQR method can both find them. Once found, they can be removed or replaced, depending on whether they're mistakes. What surprised us most was that in our small dataset, the Z-score method missed the value 100 because its score was only about 2.62, while the IQR method caught it.
 
-**Ch7:**
+**Ch7:** This chapter taught us how to select the most important features in a dataset using different methods, such as Filter, RFECV, and LassoCV. We learned that removing unnecessary features can make a model simpler and more efficient.
 
-**Ch8:**
+**Ch8:** We learned how preprocessing pipelines can combine steps like filling in missing values and scaling numerical data into one organized process. We also learned how ColumnTransformer applies different preprocessing steps to specific columns.
 
-**Ch9:**
+**Ch9:** This chapter showed us how to prepare data using techniques such as imputation, encoding, scaling, and discretization. We learned that continuous values, such as Age, can be grouped into categories to make them easier to analyze.
 
 ## Errors we found
 
